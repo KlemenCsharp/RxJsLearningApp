@@ -1,0 +1,11 @@
+.navbar {
+  margin-bottom: 3rem;
+}
+
+a {
+  padding: 1rem;
+}
+
+.active {
+  background-color: lightskyblue;
+}
