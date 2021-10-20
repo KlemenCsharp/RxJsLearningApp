@@ -1,0 +1,15 @@
+<h2>Pipeable Operators</h2>
+<button (click)="onFilter()">Filter operator</button>
+<button (click)="onMap()">Map operator</button>
+<button (click)="onCatchError()">Catch error operator</button>
+<div class="slider">
+  <p>Debounce Time slider</p>
+  <button (click)="onDebounceTime()">Debounce Time</button>
+  <input id="debounceTimeSlider" type="range" min="1" max="100" value="5">
+</div>
+<p><strong>FLATTENING OPERATORS</strong></p>
+<button (click)="onFOStaticExample()">FO Static example</button>
+<div class="dynamic-example">
+  <input type="text" id="dynamic-input">
+  <button id="dynamic-button">FO Dynamic example</button>
+</div>

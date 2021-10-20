@@ -1,0 +1,17 @@
+.buttons-placeholder {
+  margin-bottom: 12px;
+}
+
+.user-info {
+  margin: 4px;
+  padding: 8px;
+  border: 1px solid green;
+  border-radius: 8px;
+  background-color: #dae8da;
+  color: darkgreen;
+  width: 300px;
+}
+
+.fork-join {
+  background-color: #dae8da;
+}

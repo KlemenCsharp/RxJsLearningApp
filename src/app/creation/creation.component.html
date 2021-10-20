@@ -1,0 +1,35 @@
+<h2>Creation functions</h2>
+<div class="buttons-placeholder">
+  <button (click)="onOfFunction()">Of function</button>
+  <button (click)="onNewObservableFunction()">NewObservable function</button>
+  <button (click)="onOwnOf()">Own of function</button>
+  <button (click)="fromFunction()">From function</button>
+  <button (click)="fromPromiseFunction()">From promise function</button>
+</div>
+<div class="buttons-placeholder">
+  <button id="trigger-button">FromEvent Function</button>
+  <button (click)="onTimer()">Timer</button>
+  <button (click)="onInterval()">Interval</button>
+</div>
+<div class="buttons-placeholder">
+  <button class="fork-join" (click)="onForkJoin()">ForkJoin</button>
+  <button (click)="onErrorForkJoin()">Error ForkJoin</button>
+  <button (click)="onCombineLatest()">CombineLatest</button>
+</div>
+<div class="user-info">
+  <p>Name: {{name}}</p>
+  <p>Nation: {{nation}}</p>
+  <p>Food: {{food}}</p>
+  <p>Sentence: {{sentence}}</p>
+</div>
+<div class="temperature-conversion">
+  <label for="temperature-input">Temperature</label>
+  <input id="temperature-input">
+  <select name="conversions" id="conversion-dropdown">
+    <option value="">Choose conversion</option>
+    <option value="f-to-c">F -> C</option>
+    <option value="c-to-f">C -> F</option>
+  </select>
+  <p id="result-text">Fill the form!</p>
+</div>
+
