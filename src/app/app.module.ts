@@ -2,27 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ObservableComponent } from './observable/observable.component';
-import { HotColdComponent } from './hot-cold/hot-cold.component';
-import {HttpClientModule} from "@angular/common/http";
-import { CreationComponent } from './creation/creation.component';
-import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operators.component';
-import { SubjectsComponent } from './subjects/subjects.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.routing.module';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ObservableComponent,
-    HotColdComponent,
-    CreationComponent,
-    PipeableOperatorsComponent,
-    SubjectsComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, NavbarComponent],
+  imports: [BrowserModule, HttpClientModule, RouterModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
